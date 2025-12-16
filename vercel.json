@@ -1,8 +1,4 @@
 {
-  "buildCommand": "cd Recipe-Finder && npm install && npm run build",
-  "outputDirectory": "Recipe-Finder/dist",
-  "installCommand": "cd Recipe-Finder && npm install",
-  "framework": null,
   "rewrites": [
     {
       "source": "/(.*)",
