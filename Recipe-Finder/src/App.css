@@ -1,0 +1,23 @@
+/* Additional app-specific styles */
+.app {
+  min-height: 80vh;
+}
+
+/* Enhanced card hover effects */
+.card:hover .card-body h3 {
+  color: var(--accent2);
+  transition: color 0.2s ease;
+}
+
+/* Smooth transitions for favorites */
+.fav-btn .heart {
+  transition: all 0.2s ease;
+}
+
+/* Better focus states */
+.form button:focus,
+.quick-buttons button:focus,
+.fav-btn:focus {
+  outline: 2px solid var(--accent1);
+  outline-offset: 2px;
+}

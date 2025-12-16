@@ -1,0 +1,83 @@
+.feedback-history {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+.feedback-history h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 16px;
+}
+
+.feedback-history-item {
+  background: var(--border-light);
+  padding: 16px;
+  border-radius: var(--radius);
+  margin-bottom: 12px;
+  border: 1px solid var(--border);
+}
+
+.feedback-history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.feedback-category-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  background: var(--primary-light);
+  color: var(--primary);
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 12px;
+}
+
+.delete-feedback-btn {
+  background: transparent;
+  border: none;
+  color: var(--danger);
+  font-size: 18px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: var(--radius);
+  transition: all 0.2s ease;
+}
+
+.delete-feedback-btn:hover {
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.feedback-history-message {
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0 0 8px;
+}
+
+.feedback-history-date {
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.delete-rating-btn {
+  margin-top: 12px;
+  padding: 8px 16px;
+  background: transparent;
+  border: 1px solid var(--danger);
+  color: var(--danger);
+  border-radius: var(--radius);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.delete-rating-btn:hover {
+  background: var(--danger);
+  color: white;
+}
