@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5001/api'
+const API_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:5001";
 
 export const register = async (name, email, password, role) => {
   const res = await fetch(`${API_URL}/auth/register`, {
