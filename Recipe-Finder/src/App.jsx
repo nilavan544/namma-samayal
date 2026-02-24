@@ -13,6 +13,7 @@ import ShoppingList from './components/ShoppingList'
 import RecipeComparison from './components/RecipeComparison'
 import VoiceSearch from './components/VoiceSearch'
 import MealPlanner from './components/MealPlanner'
+import IngredientSearch from './components/IngredientSearch'
 import * as api from './api/auth'
 
 export default function App() {
@@ -416,6 +417,15 @@ export default function App() {
               </div>
             </div>
           </div>
+
+          <IngredientSearch 
+            onSearch={(ingredients) => {
+              setQuery(ingredients)
+              setTimeout(() => handleSearch({preventDefault:()=>{}}), 100)
+            }}
+            user={user}
+            onShowAuth={() => setShowAuth(true)}
+          />
         </div>
       )}
 
